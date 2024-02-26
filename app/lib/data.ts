@@ -45,6 +45,9 @@ export async function fetchLatestInvoices() {
       ...invoice,
       amount: formatCurrency(invoice.amount),
     }));
+    const invoiceCountPromise = sql`SELECT COUNT(*) FROM invoices`;
+    const customerCountPromise = sql`SELECT COUNT(*) FROM customers`;
+    
     return latestInvoices;
   } catch (error) {
     console.error('Database Error:', error);
