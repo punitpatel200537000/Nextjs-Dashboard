@@ -46,6 +46,7 @@ const customers = [
     email: 'michael@novotny.com',
     image_url: '/customers/michael-novotny.png',
   },
+  
   {
     id: 'd6e15727-9fe1-4961-8c5b-ea44a9bd81aa',
     name: 'Evil Rabbit',
